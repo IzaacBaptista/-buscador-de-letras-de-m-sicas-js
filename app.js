@@ -1,11 +1,7 @@
 const form = document.querySelector('#form')
-
 const searchInput = document.querySelector('#search')
-
 const songsContainer = document.querySelector('#songs-container')
-
 const prevAndNextContainer = document.querySelector('#prev-and-next-container')
-
 const apiURL = `https://api.lyrics.ovh`
 
 const getMoreSongs = async url => {
@@ -64,7 +60,6 @@ const fetchLyrics = async (artist, songTitle) => {
         <p class="lyrics">${data.lyrics}</p>
     </li>
     `
-    
 }
 
 songsContainer.addEventListener('click', event => {
