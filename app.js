@@ -9,8 +9,6 @@ const fetchData = async url => {
     return await response.json()
 }
 
-await fetchData();
-
 const getMoreSongs = async url => {
     const data = await fetchData(`https://cors-anywhere.herokuapp.com/${url}`)
     
